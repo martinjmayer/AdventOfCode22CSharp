@@ -2,7 +2,7 @@
 
 namespace AdventOfCode22CSharpTests;
 
-public class Day1CalorieCountingTests
+public class Day01CalorieCountingTests
 {
     [TestCase("0", 0)]
     [TestCase("1", 1)]
@@ -71,7 +71,7 @@ public class Day1CalorieCountingTests
     [Test]
     public void ElfCalorieRanker_GetElfWithMostCalories_Input1File_ReturnsAResult()
     {
-        var data = File.ReadAllText("Input1.txt");
+        var data = File.ReadAllText("Day1_Input1.txt");
         
         var parser = new ElfDataParser();
         var elves = parser.Parse(data);
@@ -88,7 +88,7 @@ public class Day1CalorieCountingTests
     [Test]
     public void ElfCalorieRanker_GetTotalCaloriesOfTopElvesByMostCalories_Input1FileWith3Elves_ReturnsAResult()
     {
-        var data = File.ReadAllText("Input1.txt");
+        var data = File.ReadAllText("Day1_Input1.txt");
         
         var parser = new ElfDataParser();
         var elves = parser.Parse(data);
