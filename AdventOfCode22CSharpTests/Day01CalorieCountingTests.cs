@@ -71,7 +71,7 @@ public class Day01CalorieCountingTests
     [Test]
     public void ElfCalorieRanker_GetElfWithMostCalories_Input1File_ReturnsAResult()
     {
-        var data = File.ReadAllText("Day1_Input1.txt");
+        var data = File.ReadAllText("Day01_Input1.txt");
         
         var parser = new ElfDataParser();
         var elves = parser.Parse(data);
@@ -88,7 +88,7 @@ public class Day01CalorieCountingTests
     [Test]
     public void ElfCalorieRanker_GetTotalCaloriesOfTopElvesByMostCalories_Input1FileWith3Elves_ReturnsAResult()
     {
-        var data = File.ReadAllText("Day1_Input1.txt");
+        var data = File.ReadAllText("Day01_Input1.txt");
         
         var parser = new ElfDataParser();
         var elves = parser.Parse(data);
