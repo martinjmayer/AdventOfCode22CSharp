@@ -1,0 +1,12 @@
+bin/
+obj/
+/packages/
+riderModule.iml
+/_ReSharper.Caches/
+
+# IDE-specific ignores
+.idea/
+.vscode/
+.vs/
+
+*.user
