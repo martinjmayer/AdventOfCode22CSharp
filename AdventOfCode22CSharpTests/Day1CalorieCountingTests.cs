@@ -122,41 +122,33 @@ public class ElfDataParser
 {
     public IEnumerable<Elf?> Parse(string data)
     {
+        if (data == string.Empty)
+        {
+            return new List<Elf?>();
+        }
+        
+        var normalisedData = NormaliseData(data);
+
+        return normalisedData.Split("\n\n")
+            .Select(elfData => new Elf(elfData.Split()
+                .Select(foodCaloriesString =>
+                    int.TryParse(foodCaloriesString, out var foodCalories)
+                        ? foodCalories : 0)));
+    }
+
+    private static string NormaliseData(string data)
+    {
         var dataWithoutCarriageReturns = data.Replace("\r", string.Empty);
+        var trimmedData = dataWithoutCarriageReturns.Trim('\n');
 
-        var lines = dataWithoutCarriageReturns.Split("\n");
-
-        var elves = new List<Elf?>();
-
-        Elf? currentElf = null;
-        
-        foreach (var line in lines)
+        var processingData = trimmedData;
+        const string tripleNewLine = "\n\n\n";
+        while (processingData.Contains(tripleNewLine))
         {
-            currentElf ??= GenerateNewElf();
-
-            if (line == string.Empty)
-            {
-                if (HasCalorieLines(currentElf))
-                {
-                    elves.Add(currentElf);
-                }
-                
-                currentElf = null;
-                continue;
-            }
-
-            if (currentElf is not null && int.TryParse(line, out var lineInt))
-            {
-                currentElf.AddCalorieLine(lineInt);
-            }
+            processingData = processingData.Replace(tripleNewLine, "\n\n");
         }
         
-        if (HasCalorieLines(currentElf))
-        {
-            elves.Add(currentElf);
-        }
-
-        return elves;
+        return processingData;
     }
 
     private static bool HasCalorieLines(Elf? elf)
