@@ -150,16 +150,6 @@ public class ElfDataParser
         
         return processingData;
     }
-
-    private static bool HasCalorieLines(Elf? elf)
-    {
-        return elf is not null && elf.NumberOfCalorieLines > 0;
-    }
-
-    private static Elf? GenerateNewElf()
-    {
-        return new Elf(new List<int>());
-    }
 }
 
 public class Elf
@@ -171,12 +161,5 @@ public class Elf
 
     private readonly IEnumerable<int> _calorieLines;
 
-    public void AddCalorieLine(int value)
-    {
-        ((List<int>)_calorieLines).Add(value);
-    }
-
     public int TotalCalories => _calorieLines.Sum();
-
-    public int NumberOfCalorieLines => _calorieLines.Count();
 }
