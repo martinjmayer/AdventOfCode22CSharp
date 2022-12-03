@@ -267,7 +267,7 @@ public class SecondStrategyGuideParser : IStrategyGuideParser
                 continue;
             }
             
-            throw new DataException($"Check line {i+1}. '{checkLine}' All lines must be 3 characters long. The 1st character must be X,Y or Z. The 2nd character must be space. The 3rd character must be A,B or C.");
+            throw new DataException($"Check line {i+1}: '{checkLine}' All lines must be 3 characters long. The 1st character must be X,Y or Z. The 2nd character must be space. The 3rd character must be A,B or C.");
         }
     }
 
