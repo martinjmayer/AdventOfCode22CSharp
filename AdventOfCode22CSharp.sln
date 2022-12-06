@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventOfCode22CSharpTests", "AdventOfCode22CSharpTests\AdventOfCode22CSharpTests.csproj", "{2129B2FE-6822-4C8C-A278-866D5C5C99C0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Benchmarking", "Benchmarking\Benchmarking.csproj", "{5FC10163-0693-4946-9E0C-5C8F876DD801}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{2129B2FE-6822-4C8C-A278-866D5C5C99C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2129B2FE-6822-4C8C-A278-866D5C5C99C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2129B2FE-6822-4C8C-A278-866D5C5C99C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FC10163-0693-4946-9E0C-5C8F876DD801}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FC10163-0693-4946-9E0C-5C8F876DD801}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FC10163-0693-4946-9E0C-5C8F876DD801}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FC10163-0693-4946-9E0C-5C8F876DD801}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

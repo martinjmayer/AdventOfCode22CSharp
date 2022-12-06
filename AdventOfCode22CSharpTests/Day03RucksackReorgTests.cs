@@ -43,22 +43,24 @@ public class Day03RucksackReorgTests
     
     // FileTests
     
-    [Test]
-    public void GetTotalPriority_FileTest_ReturnsExpectedTotal()
+    [TestCase("Day03_Input1.txt", ExpectedResult = 7821)]
+    public int GetTotalPriority_FileTest_ReturnsExpectedTotal(string filename)
     {
-        var data = File.ReadAllText("Day03_Input1.txt");
+        var data = File.ReadAllText(filename);
         var totalPriority = GetTotalPriority(data);
         
         Assert.That(totalPriority, Is.GreaterThan(0));
+        return totalPriority;
     }
     
-    [Test]
-    public void GetTotalPriorityOfGroupBadges_FileTest_ReturnsExpectedTotal()
+    [TestCase("Day03_Input1.txt", ExpectedResult = 2752)]
+    public int GetTotalPriorityOfGroupBadges_FileTest_ReturnsExpectedTotal(string filename)
     {
-        var data = File.ReadAllText("Day03_Input1.txt");
+        var data = File.ReadAllText(filename);
         var totalPriority = GetTotalPriorityOfGroupBadges(data);
         
         Assert.That(totalPriority, Is.GreaterThan(0));
+        return totalPriority;
     }
     
     // Implementation
