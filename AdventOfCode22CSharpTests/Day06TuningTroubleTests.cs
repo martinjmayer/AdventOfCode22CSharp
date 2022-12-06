@@ -81,16 +81,17 @@ public static class StartOfPacketMarkerDetectorOptimised
         {
             var substringOfSpan = streamSpan.Slice(streamIndex, markerLength);
 
-            var foundChars = new bool[256];
+            var foundChars = 0;
             var allCharsUnique = true;
             foreach (var character in substringOfSpan)
             {
-                if (foundChars[character])
+                var bitMask = 1 << character;
+                if ((foundChars & bitMask) != 0)
                 {
                     allCharsUnique = false;
                     break;
                 }
-                foundChars[character] = true;
+                foundChars |= bitMask;
             }
 
             if (allCharsUnique)
