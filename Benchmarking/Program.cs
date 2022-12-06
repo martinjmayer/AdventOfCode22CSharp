@@ -4,5 +4,10 @@ using AdventOfCode22CSharpTests;
 using BenchmarkDotNet.Configs;
 using BenchmarkDotNet.Running;
 
-var summary = BenchmarkRunner.Run<Day03RucksackReorgBenchmarking>(
+/*
+var summary03 = BenchmarkRunner.Run<Day03RucksackReorgBenchmarking>(
+    new DebugInProcessConfig().WithOptions(ConfigOptions.DisableOptimizationsValidator));
+*/
+
+var summary06 = BenchmarkRunner.Run<Day06TuningTroubleBenchmarking>(
     new DebugInProcessConfig().WithOptions(ConfigOptions.DisableOptimizationsValidator));
