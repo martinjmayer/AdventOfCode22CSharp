@@ -7,7 +7,14 @@ using BenchmarkDotNet.Running;
 /*
 var summary03 = BenchmarkRunner.Run<Day03RucksackReorgBenchmarking>(
     new DebugInProcessConfig().WithOptions(ConfigOptions.DisableOptimizationsValidator));
-*/
-
+    
+    
 var summary06 = BenchmarkRunner.Run<Day06TuningTroubleBenchmarking>(
     new DebugInProcessConfig().WithOptions(ConfigOptions.DisableOptimizationsValidator));
+*/
+
+var manualConfig = new DebugInProcessConfig()
+    .WithOptions(ConfigOptions.DisableOptimizationsValidator);
+
+var summary07 = BenchmarkRunner.Run<Day07NoSpaceLeftOnDeviceBenchmarking>(
+    manualConfig);

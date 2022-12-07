@@ -40,6 +40,8 @@
     <ItemGroup>
       <None Remove="Day06_Input1.txt" />
       <EmbeddedResource Include="Day06_Input1.txt" />
+      <None Remove="Day07_Input01.txt" />
+      <EmbeddedResource Include="Day07_Input1.txt" />
     </ItemGroup>
 
 </Project>
