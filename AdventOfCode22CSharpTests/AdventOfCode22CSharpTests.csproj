@@ -6,6 +6,8 @@
         <Nullable>enable</Nullable>
 
         <IsPackable>false</IsPackable>
+
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     </PropertyGroup>
 
     <ItemGroup>
@@ -33,9 +35,11 @@
       <None Update="Day05_Input1.txt">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
-      <None Update="Day06_Input1.txt">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Day06_Input1.txt" />
+      <EmbeddedResource Include="Day06_Input1.txt" />
     </ItemGroup>
 
 </Project>
