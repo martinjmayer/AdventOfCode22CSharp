@@ -16,7 +16,6 @@ public class Day08TreeTopTreehouseTests_File
         return TreeHeightAnalyser.GetHighestScenicScore(input);
     }
 }
-
 public class Day08TreeTopTreehouseTests
 {
     [TestCase("30373\n25512\n65332\n33549\n35390", ExpectedResult = 21)]
