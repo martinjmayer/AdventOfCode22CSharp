@@ -5,7 +5,7 @@ namespace AdventOfCode22CSharpTests;
 public class Day08TreeTopTreehouseBenchmarking
 {
     private readonly Day08TreeTopTreehouseTests_File _tests;
-    private const string _filename = "Day07_Input1.txt";
+    private const string _filename = "Day08_Input1.txt";
 
     public Day08TreeTopTreehouseBenchmarking()
     {
