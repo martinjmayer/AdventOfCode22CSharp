@@ -24,6 +24,5 @@ var summary09 = BenchmarkRunner.Run<Day09RopeBridgeBenchmarking>(
 var manualConfig = new DebugInProcessConfig()
     .WithOptions(ConfigOptions.DisableOptimizationsValidator);
 
-    
-var summary09 = BenchmarkRunner.Run<Day09RopeBridgeBenchmarking>(
+var summary10 = BenchmarkRunner.Run<Day10CathodeRayTubeBenchmarking>(
     manualConfig);

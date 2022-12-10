@@ -4,6 +4,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventOfCode22CSharpTests",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Benchmarking", "Benchmarking\Benchmarking.csproj", "{5FC10163-0693-4946-9E0C-5C8F876DD801}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewLineStringEncoder", "NewLineStringEncoder\NewLineStringEncoder.csproj", "{9D6D3CF8-9C45-43B9-9D0B-C55D749919CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisualTestConsoleOutput", "VisualTestConsoleOutput\VisualTestConsoleOutput.csproj", "{C601EB3D-E248-4CCA-B95D-34282F5A1C4B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,13 @@ Global
 		{5FC10163-0693-4946-9E0C-5C8F876DD801}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FC10163-0693-4946-9E0C-5C8F876DD801}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FC10163-0693-4946-9E0C-5C8F876DD801}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D6D3CF8-9C45-43B9-9D0B-C55D749919CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D6D3CF8-9C45-43B9-9D0B-C55D749919CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D6D3CF8-9C45-43B9-9D0B-C55D749919CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D6D3CF8-9C45-43B9-9D0B-C55D749919CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C601EB3D-E248-4CCA-B95D-34282F5A1C4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C601EB3D-E248-4CCA-B95D-34282F5A1C4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C601EB3D-E248-4CCA-B95D-34282F5A1C4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C601EB3D-E248-4CCA-B95D-34282F5A1C4B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
