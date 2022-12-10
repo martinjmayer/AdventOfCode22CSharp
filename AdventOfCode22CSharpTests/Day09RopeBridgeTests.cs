@@ -82,18 +82,19 @@ public static class TailTracker
 
     private static IEnumerable<Coordinate> GetDirectionCoordinate(string movementString)
     {
-        var numMoves = int.Parse(movementString[2..]);
-        return Enumerable.Range(1, numMoves).Select(_ => CreateCoordinate(movementString[0]));
+        var s = movementString.Split(' ');
+        var numMoves = int.Parse(s[1]);
+        return Enumerable.Range(1, numMoves).Select(_ => CreateCoordinate(s[0]));
     }
 
-    private static Coordinate CreateCoordinate(char direction)
+    private static Coordinate CreateCoordinate(string direction)
     {
         return direction switch
         {
-            'U' => new Coordinate(0, -1),
-            'D' => new Coordinate(0, 1),
-            'L' => new Coordinate(-1, 0),
-            'R' => new Coordinate(1, 0),
+            "U" => new Coordinate(0, -1),
+            "D" => new Coordinate(0, 1),
+            "L" => new Coordinate(-1, 0),
+            "R" => new Coordinate(1, 0),
             _ => throw new Exception($"Unknown direction: {direction}")
         };
     }
