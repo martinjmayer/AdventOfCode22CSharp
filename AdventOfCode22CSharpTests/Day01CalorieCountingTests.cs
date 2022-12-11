@@ -23,7 +23,7 @@ public class Day01CalorieCountingTests
     public void ElfDataParser_Parse_WhenInputIsEmpty_ReturnsNoElves()
     {
         var parser = new ElfDataParser();
-        var elves = parser.Parse(String.Empty);
+        var elves = parser.Parse(string.Empty);
         
         Assert.That(elves.Count(), Is.EqualTo(0));
     }
