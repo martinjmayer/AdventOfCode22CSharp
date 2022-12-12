@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using AdventOfCode22CSharpTests;
+using AdventOfCode22CSharpTests.Day11MonkeyInTheMiddle;
 using BenchmarkDotNet.Configs;
 using BenchmarkDotNet.Running;
 
@@ -33,5 +34,6 @@ var summary10 = BenchmarkRunner.Run<Day10CathodeRayTubeBenchmarking>(
 var manualConfig = new DebugInProcessConfig()
     .WithOptions(ConfigOptions.DisableOptimizationsValidator);
 
-var summary10 = BenchmarkRunner.Run<Day10CathodeRayTubeBenchmarking>(
+
+var summary11 = BenchmarkRunner.Run<Day11Benchmarking>(
     manualConfig);
