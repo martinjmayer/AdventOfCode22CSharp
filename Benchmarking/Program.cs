@@ -2,6 +2,7 @@
 
 using AdventOfCode22CSharpTests;
 using AdventOfCode22CSharpTests.Day11MonkeyInTheMiddle;
+using AdventOfCode22CSharpTests.Day12HillClimbingAlgorithm;
 using BenchmarkDotNet.Configs;
 using BenchmarkDotNet.Running;
 
@@ -29,11 +30,14 @@ var summary09 = BenchmarkRunner.Run<Day09RopeBridgeBenchmarking>(
     
 var summary10 = BenchmarkRunner.Run<Day10CathodeRayTubeBenchmarking>(
     manualConfig);
+
+var summary11 = BenchmarkRunner.Run<Day11Benchmarking>(
+    manualConfig);
+    
 */
 
 var manualConfig = new DebugInProcessConfig()
     .WithOptions(ConfigOptions.DisableOptimizationsValidator);
 
-
-var summary11 = BenchmarkRunner.Run<Day11Benchmarking>(
+var summary12 = BenchmarkRunner.Run<Day12Benchmarking>(
     manualConfig);

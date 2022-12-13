@@ -50,6 +50,8 @@
       <EmbeddedResource Include="Day10_Input1.txt" />
       <None Remove="Day11_Input1.txt" />
       <EmbeddedResource Include="Day11MonkeyInTheMiddle\Day11_Input1.txt" />
+      <None Remove="Day12HillClimbingAlgorithm\Day12_Input1.txt" />
+      <EmbeddedResource Include="Day12HillClimbingAlgorithm\Day12_Input1.txt" />
     </ItemGroup>
 
 </Project>
